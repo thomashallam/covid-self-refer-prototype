@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block content %}
+
+{# Are you a Keyworker? #}
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <h1 class="govuk-fieldset__heading">
+      Enter your details 
+    </h1>
+  </legend>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      First name
+    </label>
+    <input class="govuk-input govuk-!-width-one-quarter" id="address-town" name="address-town" type="text">
+  </div>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Last name
+    </label>
+    <input class="govuk-input govuk-!-width-one-quarter" id="address-town" name="address-town" type="text">
+  </div>
+
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Phone number
+    </label>
+    <input class="govuk-input govuk-!-width-one-quarter" id="address-town" name="address-town" type="numeric">
+  </div>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Work email address
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="address-town" name="address-town" type="text">
+  </div>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Employer
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="address-town" name="address-town" type="text">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-county">
+      National Insurance number
+    </label>
+    <input class="govuk-input govuk-!-width-one-quarter" id="address-county" name="address-county" type="numeric">
+  </div>
+<div class="govuk-inset-text">
+  We will verfiy your email address and will check your identity at the test site.
+</div>
+<button class="govuk-button" data-module="govuk-button">
+  Save and continue
+</button>
+
+  </div>
+  
+</fieldset>
+
+{% endblock %}
