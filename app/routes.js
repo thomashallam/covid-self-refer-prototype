@@ -139,7 +139,7 @@ module.exports = router;
 
 
 // Branching keyworker
-router.post('/app/views/self-refer-a/2-current-status', function (req, res) {
+router.post('/self-refer-a/2-current-status-answer', function (req, res) {
   // Get the answer from session data
   // The name between the quotes is the same as the 'name' attribute on the input elements
   // However in JavaScript we can't use hyphens in variable names
@@ -147,8 +147,8 @@ router.post('/app/views/self-refer-a/2-current-status', function (req, res) {
   let keyworker = req.session.data['keyworker']
 
   if (keyworker === 'false') {
-    res.redirect('/app/views/self-refer-a/3-confirm-name')
+    res.redirect('/self-refer-a/3-confirm-name')
   } else {
-    res.redirect('/app/views/self-refer-a/8-not-eligible')
+    res.redirect('/self-refer-a/8-not-eligible')
   }
 })
