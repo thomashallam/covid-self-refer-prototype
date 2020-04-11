@@ -28,7 +28,8 @@
 {% block content %}
 {# Are you a Keyworker? #}
 
-
+<form action="4-mobile-number" method="post" novalidate>
+  
 <div class="govuk-form-group">
 <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
@@ -53,9 +54,12 @@
 </div>
   
 </fieldset>
-<button class="govuk-button" data-module="govuk-button" href="href=4-mobile-number">
-  Save and continue
-</button>
+
+
+  <input type="hidden" name="answers-checked" value="true">
+    <button class="govuk-button" data-module="govuk-button" href="href=4-mobile-number">
+      Save and continue
+    </button>
 </form>
 
 </div>

@@ -27,6 +27,9 @@
 
 {% block content %}
 {# Are you a Keyworker? #}
+
+<form action="6-check-details" method="post" novalidate>
+
 <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h1 class="govuk-fieldset__heading">
@@ -66,9 +69,13 @@
           <p>Also, this information will help us recognise your data if you complete other NHS forms or surveys.</a></p>
         </div>
       </details>
-<button  class="govuk-button" data-module="govuk-button" href="6-check-details">
-  Save and continue
-</button>
+
+        <input type="hidden" name="answers-checked" value="true">
+          <button  class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+      </form>
 
   </div>
   

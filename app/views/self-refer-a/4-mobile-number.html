@@ -27,6 +27,9 @@
 
 {% block content %}
 {# Are you a Keyworker? #}
+
+<form action="5-confirm-employer-ni" method="post" novalidate>
+
 <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h1 class="govuk-fieldset__heading">
@@ -42,9 +45,12 @@
     <input class="govuk-input govuk-!-width-one-quarter" id="address-town" name="address-town" type="numeric">
   </div>
 
-<button  class="govuk-button" data-module="govuk-button" href="5-confirm-employer-ni">
-  Save and continue
-</button>
+
+    <input type="hidden" name="answers-checked" value="true">
+    <button  class="govuk-button" data-module="govuk-button">
+      Save and continue
+    </button>
+  </form> 
 
   </div>
   
