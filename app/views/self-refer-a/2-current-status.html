@@ -1,0 +1,120 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+{# Are you a Keyworker? #}
+
+<div class="govuk-form-group">
+
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        What is your current situation?
+      </h1>
+    </legend>
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="yes" name="changed-name" type="radio" value="symptoms.html">
+        <label class="govuk-label govuk-radios__label" for="yes" id="answer">
+          I'm a key worker who has coronavirus symptoms
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="no" name="changed-name" type="radio" value="no.html">
+        <label class="govuk-label govuk-radios__label" for="no">
+          I'm a key worker living with someone who has coronavirus symptoms
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="no" name="changed-name" type="radio" value="no.html">
+        <label class="govuk-label govuk-radios__label" for="no">
+          I'm not a key worker
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Important</span>
+    It's an offence to apply for a test by falsely claiming you are a key worker.
+  </strong>
+</div>
+
+<button type="submit" value="SUBMIT" class="govuk-button" data-module="govuk-button" onclick="checkSubmitType()">
+  Continue
+</button>
+  
+<script>
+function checkSubmitType()
+{
+    if(document.getElementById('yes').checked)
+    {
+        window.location="symptoms.html"; 
+    }
+    else if(document.getElementById('no').checked)
+    {
+         window.location="no.html";
+    }
+
+}
+</script>
+<!-- 
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+{% endblock %}
