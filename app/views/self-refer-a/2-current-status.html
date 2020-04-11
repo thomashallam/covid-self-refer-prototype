@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Start page example
+Apply for a coronavirus test - My current status
 {% endblock %}
 
 {% block header %}
@@ -29,7 +29,7 @@
 {# Are you a Keyworker? #}
 
 
-
+<!-- 
 <form action="3-confirm-name" method="post" class="form">
 
 <div class="govuk-form-group">
@@ -98,42 +98,46 @@
     </script>
 
 
+</form> -->
+
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+    <h2 class="govuk-fieldset__heading">
+      What is your current situation?
+    </h2>
+  </legend>
+  <div class="govuk-radios">
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="keyworker-yes" name="keyworker" type="radio" value="true">
+      <label class="govuk-label govuk-radios__label" for="keyworker-yes">
+        I'm a key worker who has coronavirus symptoms
+      </label>
+    </div>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="household-yes" name="keyworker" type="radio" value="true">
+        <label class="govuk-label govuk-radios__label" for="keyworker-yes">
+          I'm a key worker living with someone who has coronavirus symptoms
+        </label>
+      </div>
+
+    
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="keyworker-no" name="keyworker" type="radio" value="false">
+      <label class="govuk-label govuk-radios__label" for="keyworker-no">
+        I'm not a key worker
+      </label>
+    </div>
+  </div>
+  </fieldset>
+</div>
+
+<button class="govuk-button" data-module="govuk-button">Continue</button>
+
 </form>
-
-
-{% call fieldset({
-  legend: {
-    text: "What is your current situation?",
-    classes: "govuk-fieldset__legend--l",
-    isPageHeading: true
-  }
-}) %}
-
-{{ radios({
-  "idPrefix": "keyworker",
-  "name": "keyworkerstatus",
-  "items": [,
-    {
-      "value": "Yes",
-      "text": "I'm a key worker who has coronavirus symptoms"
-    },
-    {
-      "value": "No",
-      "text": "I'm a key worker living with someone who has coronavirus symptoms"
-    }
-    {
-      "value": "No",
-      "text": "I'm not a key worker"
-    }
-  ]
-}) }}
-
-{% endcall %}
-
-{{ button({
-  "text": "Continue"
-}) }}
-
 
 
 
