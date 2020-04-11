@@ -28,7 +28,9 @@
 {% block content %}
 {# Are you a Keyworker? #}
 
-<div class="govuk-grid-column-two-thirds">
+<div class="govuk-grid-column-three-quarters">
+
+
 
 <div class="govuk-form-group">
 
@@ -38,6 +40,13 @@
         What is your current situation?
       </h1>
     </legend>
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Important</span>
+        It's an offence to apply for a test by falsely claiming you are a key worker.
+      </strong>
+    </div>
     <div class="govuk-radios govuk-radios--inline">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="yes" name="changed-name" type="radio" value="3-confirm-name.html">
@@ -57,38 +66,38 @@
           I'm not a key worker
         </label>
       </div>
-    </div>
+  </div>
   </fieldset>
-</div>
 
-<div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Important</span>
-    It's an offence to apply for a test by falsely claiming you are a key worker.
-  </strong>
-</div>
-
-<button type="submit" value="SUBMIT" class="govuk-button" data-module="govuk-button" onclick="checkSubmitType()">
-  Continue
-</button>
+  <button type="submit" value="SUBMIT" class="govuk-button" data-module="govuk-button" onclick="checkSubmitType()">
+    Continue
+  </button>
+    
+    <script>
+    function checkSubmitType()
+    {
+        if(document.getElementById('yes').checked)
+        {
+            window.location="symptoms.html"; 
+        }
+        else if(document.getElementById('no').checked)
+        {
+            window.location="no.html";
+        }
   
-<script>
-function checkSubmitType()
-{
-    if(document.getElementById('yes').checked)
-    {
-        window.location="symptoms.html"; 
     }
-    else if(document.getElementById('no').checked)
-    {
-         window.location="no.html";
-    }
+    </script>
 
-}
-</script>
+
 
 </div>
+
+
+</div>
+
+
+
+
 <!-- 
 
     <div class="govuk-grid-column-one-third">
@@ -119,5 +128,5 @@ function checkSubmitType()
       </aside>
 
     </div> -->
-  </div>
+
 {% endblock %}
