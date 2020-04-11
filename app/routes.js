@@ -146,7 +146,7 @@ router.post('/self-refer-a/2-current-status-answer', function (req, res) {
 
   let keyworker = req.session.data['keyworker']
 
-  if (keyworker === 'false') {
+  if (keyworker === 'true') {
     res.redirect('/self-refer-a/3-confirm-name')
   } else {
     res.redirect('/self-refer-a/8-not-eligible')
