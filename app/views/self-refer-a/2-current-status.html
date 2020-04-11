@@ -101,7 +101,38 @@
 </form>
 
 
+{% call fieldset({
+  legend: {
+    text: "What is your current situation?",
+    classes: "govuk-fieldset__legend--l",
+    isPageHeading: true
+  }
+}) %}
 
+{{ radios({
+  "idPrefix": "keyworker",
+  "name": "keyworkerstatus",
+  "items": [
+    {
+      "value": "Yes",
+      "text": "I'm a key worker who has coronavirus symptoms"
+    },
+    {
+      "value": "No",
+      "text": "I'm a key worker living with someone who has coronavirus symptoms"
+    }
+    {
+      "value": "No",
+      "text": "I'm not a key worker"
+    }
+  ]
+}) }}
+
+{% endcall %}
+
+{{ button({
+  "text": "Continue"
+}) }}
 
 
 
