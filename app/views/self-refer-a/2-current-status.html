@@ -39,13 +39,7 @@
         What is your current situation?
       </h1>
     </legend>
-    <div class="govuk-warning-text">
-      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-      <strong class="govuk-warning-text__text">
-        <span class="govuk-warning-text__assistive">Important</span>
-        It's an offence to apply for a test by falsely claiming you are a key worker.
-      </strong>
-    </div>
+
     <div class="govuk-radios govuk-radios--inline">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="yes" name="changed-name" type="radio" value="key-worker-symptoms">
@@ -67,7 +61,16 @@
       </div>
   </div>
   </fieldset>
+  <div>
 
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Important</span>
+        It's an offence to apply for a test by falsely claiming you are a key worker.
+      </strong>
+    </div>
+    
   <button type="submit" value="SUBMIT" class="govuk-button" data-module="govuk-button" onclick="checkSubmitType()">
     Continue
   </button>
@@ -123,6 +126,6 @@
         </nav>
       </aside>
 
-    </div> -->
-  </div>
+    </div> 
+  </div>-->
 {% endblock %}
