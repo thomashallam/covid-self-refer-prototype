@@ -144,9 +144,9 @@ router.post('/app/views/self-refer-a/2-current-status', function (req, res) {
   // The name between the quotes is the same as the 'name' attribute on the input elements
   // However in JavaScript we can't use hyphens in variable names
 
-  let over18 = req.session.data['keyworker']
+  let keyworker = req.session.data['keyworker']
 
-  if (over18 === 'false') {
+  if (keyworker === 'false') {
     res.redirect('/app/views/self-refer-a/3-confirm-name')
   } else {
     res.redirect('/app/views/self-refer-a/8-not-eligible')
