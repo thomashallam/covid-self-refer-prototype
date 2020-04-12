@@ -41,11 +41,26 @@ Apply for a coronavirus test - Check your details
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-three-quarters-from-desktop">
 
-        <h1 class="govuk-heading-l">Check your answers before completing the application</h1>
+        <h1 class="govuk-heading-l">Check your answers</h1>
 
-        <h2 class="govuk-heading-m">Key worker details</h2>
+        <h2 class="govuk-heading-m">Application details</h2>
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Current situation
+            </dt>
+            <dd class="govuk-summary-list__value">
+              I'm a key worker who has coronavirus symptoms
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="2-current-status">
+                Change<span class="govuk-visually-hidden"> key worker status</span>
+              </a>
+            </dd>
+          </div> 
+
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               Name
@@ -59,19 +74,7 @@ Apply for a coronavirus test - Check your details
               </a>
             </dd>
           </div>
-           <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Key Worker Status
-            </dt>
-            <dd class="govuk-summary-list__value">
-              I'm a key worker who has coronavirus symptoms
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="2-current-status">
-                Change<span class="govuk-visually-hidden"> key worker status</span>
-              </a>
-            </dd>
-          </div> 
+
           
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
@@ -101,7 +104,7 @@ Apply for a coronavirus test - Check your details
           </div>
           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-              Work email address
+              Email address
             </dt>
             <dd class="govuk-summary-list__value">
               <p class="govuk-body">tom.smith.99@nhs.net</p>
@@ -112,7 +115,7 @@ Apply for a coronavirus test - Check your details
               </a>
             </dd>
           </div>
-          <div class="govuk-summary-list__row">
+<!--           <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
               National Insurance Number
             </dt>
@@ -123,8 +126,8 @@ Apply for a coronavirus test - Check your details
               <a class="govuk-link" href="5-confirm-employer-ni">
                 Change<span class="govuk-visually-hidden"> ni</span>
               </a>
-            </dd>
-          </div>
+            </dd> 
+          </div>-->
         </dl>
 
       
@@ -133,12 +136,12 @@ Apply for a coronavirus test - Check your details
 
         <p class="govuk-body">By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
 
-        <form action="7-eligible-start" method="post" novalidate>
+        <form action="7-application-submitted" method="post" novalidate>
 
           <input type="hidden" name="answers-checked" value="true">
 
-          <button class="govuk-button" data-module="govuk-button" href="7-eligible-details">
-            Accept and send
+          <button class="govuk-button" data-module="govuk-button">
+            Submit application
           </button>
 
         </form>
