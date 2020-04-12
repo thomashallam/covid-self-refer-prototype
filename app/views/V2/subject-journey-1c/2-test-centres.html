@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - Confirm my name
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+{# Are you a Keyworker? #}
+
+<div class="govuk-width-container">
+  <a href="1-find-test-centre" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters-from-desktop">
+
+
+<form action="3-choose-time" method="post" novalidate style="display:inline; margin-right: 20px;">
+  
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <h1 class="govuk-fieldset__heading">
+      Test centres near RM6 76D
+    </h1>
+ </legend>
+
+ <p class="govuk-body-l">Choose a test centre</p>
+
+ <p class="govuk-body-l">Your nearest test centre is:</p>
+ <div class="govuk-radios" data-module="govuk-radios">
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="how-contacted-conditional" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
+    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional">
+      <strong>North London Test Centre (0.5 miles away)</strong><br>
+      <br><p>125 testing lane<br>
+      Highbury & Islington<br>
+      RM4 3RS</p>
+      <p>54 slots availablee in the next 5 days</p>
+    </label>
+  </div>
+ 
+
+ 
+ <p class="govuk-body-l">Other test centres:</p>
+
+ <p><a href="#">See closer test centres</a></p>
+
+ <div class="govuk-radios" data-module="govuk-radios">
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="how-contacted-conditional4" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
+    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional4">
+      <strong>South London Test Centre (5.5 miles away)</strong><br>
+      <br><p>125 testing lane<br>
+      Highbury & Islington<br>
+      RM4 3RS</p>
+      <p>54 slots availablee in the next 5 days</p>
+    </label>
+  </div>
+  <div class="govuk-radios" data-module="govuk-radios">
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="how-contacted-conditional2" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
+      <label class="govuk-label govuk-radios__label" for="how-contacted-conditional2">
+        <strong>East London Test Centre (15.5 miles away)</strong><br>
+        <br><p>125 testing lane<br>
+        Highbury & Islington<br>
+        RM4 3RS</p>
+        <p>54 slots availablee in the next 5 days</p>
+      </label>
+    </div>
+
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional3" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional3">
+          <strong>West London Test Centre (19.5 miles away)</strong><br>
+          <br><p>125 testing lane<br>
+          Highbury & Islington<br>
+          RM4 3RS</p>
+          <p>54 slots availablee in the next 5 days</p>
+        </label>
+      </div>
+
+
+      <p><a href="#">See further away test centres</a></p>
+
+
+</fieldset>
+
+
+  <input type="hidden" name="answers-checked" value="true"  >
+    <button class="govuk-button" data-module="govuk-button" style="display:inline; margin-right: 20px;">
+      Save and continue
+    </button>
+
+</form>
+
+<form action="1-find-test-centre" method="post" novalidate style="display:inline">
+  <input type="hidden" name="answers-checked" value="true">
+<button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  Change search area
+</button>
+</form>
+
+</div>
+
+</div>
+</div>
+</main>
+</div>
+
+
+
+{% endblock %}

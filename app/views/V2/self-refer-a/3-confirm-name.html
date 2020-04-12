@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - Confirm my name
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+{# Are you a Keyworker? #}
+
+<div class="govuk-width-container">
+  <a href="2-current-status" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters-from-desktop">
+
+<form action="4-mobile-number" method="post" novalidate>
+  
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <h1 class="govuk-fieldset__heading">
+      What's your name?
+    </h1>
+  </legend>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      First name
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="address-town" name="address-town" type="text">
+  </div>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Last name
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="address-town" name="address-town" type="text">
+  </div>
+</div>
+  
+</fieldset>
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Why are we asking for this?
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <p>We will use this information to help register you and to check your identity at the test site.</p>
+    <p>Also, this information will help us recognise your data if you complete other NHS forms or surveys.</a></p>
+  </div>
+</details>
+
+  <input type="hidden" name="answers-checked" value="true">
+    <button class="govuk-button" data-module="govuk-button" href="4-mobile-number">
+      Save and continue
+    </button>
+</form>
+
+</div>
+
+</div>
+</div>
+</main>
+</div>
+
+
+
+{% endblock %}

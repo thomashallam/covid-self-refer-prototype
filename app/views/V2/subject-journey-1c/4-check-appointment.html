@@ -1,0 +1,196 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - Check your details
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+{# Check details? #}
+<div class="govuk-width-container">
+  <a href="3-choose-time" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters-from-desktop">
+
+        <h1 class="govuk-heading-l">Confirm your appointment</h1>
+        
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-warning-text__assistive">Important</span>
+            Check these details carefully before you confirm your appointment.
+          </strong>
+        </div>
+
+       <p style="margin-bottom: 5px;"><strong>Appointment details</strong></p>
+       <div style="border-bottom: 1px solid lightgray"></div>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+          Test centre
+          </dt>
+          <dd class="govuk-summary-list__value">
+            North London Test Centre
+              <br>125 testing lane
+              <br>Highbury & Islington
+              <br>RM4 3RS</p>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="../subject-journey-1a/6-check-details">
+              Change<span class="govuk-visually-hidden"> change</span>
+            </a>
+          </dd>
+        </div>
+        </dl>
+
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Date and Time
+            </dt>
+            <dd class="govuk-summary-list__value">
+              12 April 2020
+              <br>12:30 pm - 1:00 pm
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="../subject-journey-1a/6-check-details">
+                Change<span class="govuk-visually-hidden"> change</span>
+              </a>
+            </dd>
+          </div>
+          </dl>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Vehicle to arrive in
+              </dt>
+              <dd class="govuk-summary-list__value">
+                CU57ABC
+              </dd>
+             <dd class="govuk-summary-list__actions">
+              </dd>
+            </div>
+            </dl>
+
+            <br>
+            <br>
+
+        <p><strong>Household members to be tested</strong></p>
+        <div style="margin-bottom: 0px; border-bottom: 1px solid lightgray"></div>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Bob Smith
+            </dt>
+            <dd class="govuk-summary-list__value">
+              bobsmithneedstesting@gmail.com
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              073727474224
+            </dd>
+          </div>
+          </dl>
+
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Pete Smith
+              </dt>
+              <dd class="govuk-summary-list__value">
+                peter.smith11@nhs.net
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                07372563553
+              </dd>
+            </div>
+            </dl>
+
+
+            
+        <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Julia Smith
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Julie.smith@googlemail.com
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              073722442422
+            </dd>
+          </div>
+          </dl>
+
+                      
+        <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Marina Smith
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Julie.smith@googlemail.com
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              0737224424224
+            </dd>
+          </div>
+          </dl>
+
+
+          <br>
+
+           <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Important</span>
+              You cannot change an appointment once it’s been confirmed.
+            </strong>
+          </div>
+
+          <form action="5-booked" method="post" novalidate>
+            <input type="hidden" name="answers-checked" value="true">
+            <button class="govuk-button" data-module="govuk-button" href="../subject-journey-1c/1-household-members">
+              Confirm appointment
+            </button>
+          </form>
+
+
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

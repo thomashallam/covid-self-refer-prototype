@@ -1,0 +1,142 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - Check your details
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+{# Check details? #}
+<div class="govuk-width-container">
+ <a href="4-check-appointment" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters-from-desktop">
+
+        <div class="govuk-panel govuk-panel--confirmation" style="padding:30px;" >
+          <h1 class="govuk-panel__title">Appointment booked</h1>
+          <strong>North London Test Centre, 125 testing lane, Highbury & Islingto, RM4 3RS</strong>
+          <br>
+          <br>
+          <div style="display: inline; margin-right: 30px;">Vehicle: CU57ABC</div><div style="display: inline; margin-right: 30px; ">Date: 12 Apr 2020</div><div style="display: inline; margin-right: 30px; ">Time: 7pm-8pm</div>
+        </div>
+        
+        <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Bob Smith
+            </dt>
+            <dd class="govuk-summary-list__value">
+              bobsmithneedstesting@gmail.com
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              073727474224
+            </dd>
+          </div>
+          </dl>
+
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Pete Smith
+              </dt>
+              <dd class="govuk-summary-list__value">
+                peter.smith11@nhs.net
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                07372563553
+              </dd>
+            </div>
+            </dl>
+
+
+            
+        <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Julia Smith
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Julie.smith@googlemail.com
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              073722442422
+            </dd>
+          </div>
+          </dl>
+
+                      
+        <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Marina Smith
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Julie.smith@googlemail.com
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              0737224424224
+            </dd>
+          </div>
+          </dl>
+
+          <br>
+          <h3 class="govuk-heading-m">Your passes to access the test centre</h3>
+          <p>          We've sent an email and a text message to you and the other household members joining you for testing. This contains your passes. 
+            
+          <p>To access the test centre, <strong>you must all bring a copy of your own pass</strong> either on your smartphone or as a printout</p>
+
+          <h3 class="govuk-heading-m">What happens at a testing centre?</h3>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>you will stay in your vehicle for the duration of your visit
+            <li>you'll be given the option to have a swabbing assistant administer the test for you or administer the test yourself. If you choose to administer the test yourself, you'll be given full instructions on how to do this when you arrive
+            </li><li>we will send you your results by text message - most people will get their results within 48 hours, but it could take up to 5 days</li>
+          </ul>
+
+          <h3 class="govuk-heading-m">What you need to bring</h3>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>a copy of your own test centre pass - this contains a QR code and an ID number (if you don’t have access to a phone or a printer, bring a written note of the code number on your pass)
+          </li><li>a form of photo identification - either your driving license or passport
+          </li><li>you can bring children under the age of 18, or dependants in your vehicle if you cannot find alternative care. Children cannot be tested.</li></ul>
+
+          <h3 class="govuk-heading-m">How to prepare for the test</h3>
+          <ul class="govuk-list govuk-list--bullet">
+          <li>you do not need to do anything differently before your test, such as eating or drinking differently</li>
+          </ul>
+          
+          <h3 class="govuk-heading-m">We want to hear from you</h3>
+          <p><a href="6-email-confirmation">What did you think of our service?</a> (takes 3 minutes)</p>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
