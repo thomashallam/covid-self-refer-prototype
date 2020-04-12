@@ -46,7 +46,7 @@ Apply for a coronavirus test - Confirm mobile number
 <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h1 class="govuk-fieldset__heading">
-      Enter your details 
+      What's your mobile number? 
     </h1>
   </legend>
 
@@ -57,7 +57,17 @@ Apply for a coronavirus test - Confirm mobile number
     </label>
     <input class="govuk-input govuk-!-width-one-half" id="address-town" name="address-town" type="numeric">
   </div>
-
+  <details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Why are we asking for this?
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+      <p>We will use this information to help register you and to check your identity at the test site.</p>
+      <p>Also, this information will help us recognise your data if you complete other NHS forms or surveys.</a></p>
+    </div>
+  </details>
 
     <input type="hidden" name="answers-checked" value="true">
     <button  class="govuk-button" data-module="govuk-button">
