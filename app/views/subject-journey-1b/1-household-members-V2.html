@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - Check your details
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+{# Check details? #}
+<div class="govuk-width-container">
+  <a href="/subject-journey-1a/8-check-details" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters-from-desktop">
+
+        <h1 class="govuk-heading-l">Household members to be tested</h1>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-3">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Bob Smith
+            </dt>
+            <dd class="govuk-summary-list__value">
+              bobsmithneedstesting@gmail.com
+              <br>073727474224
+              <br>Vehicle registration: CU57ABC 
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="/subject-journey-1a/8-check-details">
+                Edit details<span class="govuk-visually-hidden"> mobile</span>
+              </a>
+            </dd>
+          </div>
+          </dl>
+          <form action="/subject-journey-1c/1-find-test-centre" method="post" novalidate>
+            <input type="hidden" name="answers-checked" value="true">
+            <button class="govuk-button" data-module="govuk-button" href="/subject-journey-1c/1-household-members">
+              Book appointment
+            </button>
+          </form>
+
+          <h3 class="govuk-heading-m">Who can be tested?</h3>
+
+          <p style="margin-bottom: 0px;"><strong>If you are the key worker that we contacted </strong></p>
+          <p>Only you can get tested. Even if you live with other people who have symptoms.</p>
+  
+          <p style="margin-bottom: 0px;"><strong>If you are not the key worker that we contacted</strong></p>
+  
+        <p style="margin-bottom: 5px;">Yes - you can add up to 3 other people to your application to join you for testing. All other household members joining you for testing must:</p>
+        <ul class="govuk-list govuk-list--bullet" >
+        <li>be over 18
+        </li><li>also have symptoms
+        </li><li>arrive in the same vehicle
+        </li><li>be sat next to a window in the vehicle
+        </li><li>bring their test centre pass and photo identification</li>
+        </ul>
+
+        <form action="2-full-name" method="post" novalidate>
+          <input type="hidden" name="answers-checked" value="true">
+        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Add household member
+        </button>
+      </form>
+      
+
+
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

@@ -41,38 +41,37 @@ Apply for a coronavirus test - Confirm my name
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-three-quarters-from-desktop">
 
-<form action="4-mobile-number" method="post" novalidate>
+<form action="3-vehicle-reg" method="post" >
   
 <div class="govuk-form-group">
 <fieldset class="govuk-fieldset">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
     <h1 class="govuk-fieldset__heading">
-      Enter your details 
+      What's your keyworker invitation code? 
     </h1>
   </legend>
 
   <div class="govuk-form-group">
     <label class="govuk-label" for="address-town">
-      First name
+    <strong>Keyworker invitation code</strong>
+    <p>This must be the 16 digit invitation code you received in the SMS we sent you.</p>
     </label>
-    <input class="govuk-input govuk-!-width-one-half" id="address-town" name="address-town" type="text">
+    <input class="govuk-input" id="address-town" name="address-town" type="text" required="true" required title="4 characters per box" pattern=".{4,}" style="width: 100px;margin-right: 10px; ">    
+    <input class="govuk-input" id="address-town" name="address-town" type="text" required="true" required title="4 characters per box" pattern=".{4,}"  style="width: 100px;margin-right: 10px; ">    
+    <input class="govuk-input" id="address-town" name="address-town" type="text" required="true" required title="4 characters per box" pattern=".{4,}" style="width: 100px;margin-right: 10px; ">    
+    <input class="govuk-input" id="address-town" name="address-town" type="text" required="true" required title="4 characters per box" pattern=".{4,}" style="width: 100px;margin-right: 10px; ">    
+
   </div>
 
-    <div class="govuk-form-group">
-    <label class="govuk-label" for="address-town">
-      Last name
-    </label>
-    <input class="govuk-input govuk-!-width-one-half" id="address-town" name="address-town" type="text">
-  </div>
+    
 </div>
   
 </fieldset>
 
-
   <input type="hidden" name="answers-checked" value="true">
-    <button class="govuk-button" data-module="govuk-button" href="3-vehicle-reg">
-      Save and continue
-    </button>
+  <button class="govuk-button" data-module="govuk-button">
+    Save and continue
+  </button>
 </form>
 
 </div>

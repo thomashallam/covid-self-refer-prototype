@@ -33,18 +33,18 @@ Apply for a coronavirus test - You can now register to book
 
 {% block content %}
 {# Are you a Keyworker? #}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-three-quarters-from-desktop">
 
-      <h1 class="govuk-heading-xl" style="margin-bottom:0px">
-      Book a COVID-19 drive-through test centre visit
-      </h1>
 
       <div class="govuk-width-container">
+
+        <h1 class="govuk-heading-xl" style="margin-bottom:0px">
+          Book a COVID-19 drive-through test centre visit
+          </h1>
+          
         <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
           <div class="govuk-grid-row">
-            <div class="govuk-grid-column-full">
-                <p>
+            <div class="govuk-grid-column-three-quarters-from-desktop">
+              <p>
                   You’ve been invited to book a COVID-19 test, either for yourself or for others in your household, 
                   at a drive-through test centre. This is because you’re a key worker whose work is critical 
                   to the UK’s response to COVID-19. We contacted you because we believe you’re self-isolating, 
@@ -54,7 +54,7 @@ Apply for a coronavirus test - You can now register to book
                 <p>The test involves taking a swab sample from your nose and throat.
                 </p>
                 <h2 class="govuk-heading-m">Who can use this service</h2>
-                <p>If you (the key worker) are self-isolating because: </p>
+                <p><strong>If you (the key worker) are self-isolating because:</strong></p>
                 <p>1. you have symptoms of COVID-19 – then you can book a test for yourself. No one else in your household can be tested using this service, even if they are also self-isolating.</p>
                   <p>2. one or more other people in your home have symptoms, but you are not displaying symptoms yourself – then you are not eligible to book a test for yourself. Only the person or people that you live with who have symptoms are eligible for a test. If this applies to your situation, you can register these other symptomatic people for a test using this form.</p> 
                   <p>You can include a maximum of 3 people to be tested, who must all:</p>
@@ -64,10 +64,10 @@ Apply for a coronavirus test - You can now register to book
                   <li>be sat next to a window in the vehicle</li>
                   </ul>
                 <p>3. a child under 18 in your home has symptoms, but you are not displaying symptoms yourself – then you’re not able to book a test at this point.
-                If you are self-isolating for any other reason, you are not eligible to use this service. If you, or the people being tested, cannot drive then you or they are welcome to be driven by anyone else.
-              </p><p>To complete this form, you'll need:</p> 
+                <p>If you are self-isolating for any other reason, you are not eligible to use this service. If you, or the people being tested, cannot drive then you or they are welcome to be driven by anyone else.</p>
+              </p>
+              <h2>To complete this form, you'll need:</h2> 
                 <ul class="govuk-list govuk-list--bullet">
-
                     <li>your key worker invitation code which we sent you via text</li>
                     <li>your email address</li>
                     <li>your mobile phone number</li>
@@ -76,33 +76,36 @@ Apply for a coronavirus test - You can now register to book
                     </li>
                 </ul>
 
-          <p>If you would like a copy of the privacy notice for this service, email DHSC’s Data Protection Officer at email@email.com
+          <p>You can read <a href="#">the privacy notice about how we collect and process your data</a>
           </p>       
           <h2>What happens at a testing centre?</h2>
             <ul class="govuk-list govuk-list--bullet">
               <li>you will stay in your vehicle for the duration of your visit</li>
-              <li>you'll be given the option to have a swabbing assistant administer the test for you or administer the test yourself. You'll be given full instructions on how to do this when you arrive
-              </li>
-              <li>We will send you your test results by text message — most people will get their results within 48 hours, but it could take up to 5 days</li>
-            </ul>    
+              <li>you'll be given the option to have a swabbing assistant administer the test for you or administer the test yourself<br>
+              - instructions are provided on arrival</li>
+            </ul>  
+              <p>We will send you your test results by text message — most people will get their results within 48 hours, but it could take up to 5 days</p>
+              
             <h2>What people arriving at a test centre need to bring</h2>
             <ul class="govuk-list govuk-list--bullet">
               <li>a copy of your test centre pass, which we'll email and text you after you book your visit – this contains a QR code and an ID number</li>
               <li>a form of identification - either your driving license or passport</li>
-              <li>If you are a key worker without symptoms, self-isolating because one or more other people in your household have symptoms, ask a symptomatic household member to complete the questions in this form.
-              </li>
-            </ul>  
-            
+            </ul>
+            <div class="govuk-inset-text">
+              If you are a key worker without symptoms, self-isolating because one or more other people in your household have symptoms, ask a symptomatic household member to complete the questions in this form.
+            </div>
+          
           </div>
         </main>
+        <a href="2-unique-code" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+          Start now
+          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+          </svg>
+        </a>
       </div>
 
-      <a href="2-unique-code" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button" target="_blank">
-        Start now
-        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
-          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
-        </svg>
-      </a>
+
 
     </div>
   </div>
@@ -137,5 +140,4 @@ Apply for a coronavirus test - You can now register to book
       </aside>
 
     </div> -->
-  </div>
 {% endblock %}

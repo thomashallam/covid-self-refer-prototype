@@ -51,7 +51,7 @@ Start now
 
 
 What's your keyworker invitation code?
-Top of Form
+
 Keyworker invitation code
 
 This must be the 16 digit invitation code you received in the SMS we sent you.
@@ -84,12 +84,12 @@ Save and continue
 
 
 What's your vehicle registration number?
-Top of Form
+
 Vehicle registration number (number plate). For example, CU57ABC
 This must be the registration number (number plate) of the vehicle you'll use to drive to the test centre. We'll use this to check that it's you after you arrive. It doesn’t have to be registered to your name, just as long as it’s the one you turn up in.
 Please get in touch with your NHS trust or employer if you do not have access to a vehicle, or someone who can drive you. You cannot turn up on foot or in a taxi.
 Save and continue
-Bottom of Form
+
 
 
 
@@ -100,13 +100,13 @@ Bottom of Form
 
 
 What's your date of birth?
-Top of Form
+
 For example, 31 3 1980
 Day
 Month
 Year
 Save and continue
-Bottom of Form
+
 
 
 
@@ -149,7 +149,7 @@ Bottom of Form
 
 
 What’s your name?
-Top of Form
+
 First name
 Last name
 
@@ -158,10 +158,10 @@ Male
 Female
 
 Save and continue
-Bottom of Form
 
 
-Bottom of Form
+
+
 
 
 
@@ -197,12 +197,11 @@ Bottom of Form
 
 What's your email address?
 We'll send your test centre pass to this address. If you do not have an email address, you are welcome to give us someone else’s email address, if that person can print your pass for you. You can also bring a copy of your pass on a smartphone.
-Top of Form
+
 Email address
 Confirm email addres
 
 Save and continue
-Bottom of Form
 
 
 
@@ -239,7 +238,8 @@ Bottom of Form
 
 
 
-Top of Form
+
+
 What's your mobile number?
 We'll text your test centre pass and your test results to this number.
 Mobile telephone number
@@ -329,6 +329,8 @@ You can add up to 3 other people to your application to join you for testing. Al
     </li><li>arrive in the same vehicle
     </li><li>be sat next to a window in the vehicle
     </li><li>bring their test centre pass and photo identification</li>
+
+    
 Household members to be tested
 John Smith
 email@email.com
@@ -352,13 +354,13 @@ Book appointment      Add household member
 
 
 What's your household member's date of birth?
-Top of Form
+
 For example, 31 3 1980
 Day
 Month
 Year
 Save and continue
-Bottom of Form
+
 
 
 
@@ -401,7 +403,7 @@ Bottom of Form
 
 
 What’s your household member's name?
-Top of Form
+
 First name
 Last name
 
@@ -410,7 +412,7 @@ Male
 Female
 
 Save and continue
-Bottom of Form
+
 
 
 
@@ -448,7 +450,7 @@ Bottom of Form
 What's Julia Smith's email address?
 We'll send their test centre pass to this address. If they do not have an email address, they are welcome to give us someone else’s email address, if that person can print their pass for them. They can also bring a copy of their pass on a smartphone.
 
-Top of Form
+
 Email address
 Confirm email address
 
@@ -589,7 +591,7 @@ Book appointment.   Add household member
 
 Find a test centre
 Find a test centre where you can take a COVID-19 test
-Top of Form
+
 Search for a UK postcode
 
 Find a test centre
@@ -708,7 +710,7 @@ Gatwick (Gatwick Airport)
 Horley
 Gatwick
 RH6 0NP
-Top of Form
+
 Available test times for your household
 When booking a test, please be aware that:
    <ul gov-lists gov-lists--bullets><li>you must turn up on time
@@ -733,7 +735,7 @@ Sunday 12th April
 See next day
 
 Save and continue     Change test centre
-Bottom of Form
+
 
 
 
@@ -766,7 +768,7 @@ Confirm appointment
 
 
 
-Bottom of Form
+
 
 
 
