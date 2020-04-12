@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - You can now register to book
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+    </p>
+</div>
+
+{% endblock %}
+
+{% block content %}
+{# Are you a Keyworker? #}
+<a href="7-sms-access-pass" class="govuk-back-link">Back</a>
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-three-quarters-from-desktop">
+
+          <a href="/"><img src="/public/images/email-access-pass.png" width="400px"></a>
+
+    </div>
+
+  </div>
+{% endblock %}

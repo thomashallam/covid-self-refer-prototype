@@ -330,7 +330,7 @@ You can add up to 3 other people to your application to join you for testing. Al
     </li><li>be sat next to a window in the vehicle
     </li><li>bring their test centre pass and photo identification</li>
 
-    
+
 Household members to be tested
 John Smith
 email@email.com
@@ -631,8 +631,20 @@ Find a test centre
 
 
 Test centres near GU323JY
+
 Choose a test centre
 Your nearest test centre is:
+
+
+
+
+
+
+
+
+
+
+
 Gatwick (Gatwick Airport) (34.1 miles away)
 Horley 
 Gatwick
