@@ -144,7 +144,7 @@ module.exports = router;
   // Get the answer from session data
   // The name between the quotes is the same as the 'name' attribute on the input elements
   // However in JavaScript we can't use hyphens in variable names
-  router.post('/V2/self-refer-a/2-current-status-answer', function (req, res) {
+  router.post('/V1-4/self-refer-a/2-current-status-answer', function (req, res) {
   let keyworker = req.session.data['keyworker']
 
   if (keyworker === 'true') {
@@ -160,7 +160,7 @@ module.exports = router;
   // The name between the quotes is the same as the 'name' attribute on the input elements
   // However in JavaScript we can't use hyphens in variable names
 
-router.post('/V1/self-refer-a/2-current-status-answer', function (req, res) {
+router.post('/V1-3/self-refer-a/2-current-status-answer', function (req, res) {
   let keyworker = req.session.data['keyworker']
 
   if (keyworker === 'true') {
