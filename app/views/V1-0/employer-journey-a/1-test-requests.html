@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - Confirm my name
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+{# Are you a Keyworker? #}
+
+<div class="govuk-width-container">
+  <a href="0-login" class="govuk-back-link">Logout</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+<form action="3-vehicle-reg" method="post" >
+  
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <h1 class="govuk-fieldset__heading">
+      COVID-19 test centre requests
+    </h1>
+  </legend>
+  
+  <p>On this page, you can:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>Submit requests for test centre appointment allocations by adding an Excel file</li>
+    <li>Download your submitted requests which have had appointments allocated</li>
+    <li>View hte status of your submitted requests</li>
+  </ul>
+  
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+    <strong>Submit requests for test centre appointments</strong>
+    </label>
+  </div>
+
+</div>
+  
+  </fieldset>
+
+  <input type="hidden" name="answers-checked" value="true">
+  <button class="govuk-button" data-module="govuk-button">
+    Add file
+  </button>
+</form>
+
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption">Download and view submitted requests</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header app-custom-class">File name</th>
+      <th scope="col"  class="govuk-table__header app-custom-class">NHS Trust</th>
+      <th scope="col"  class="govuk-table__header app-custom-class">Last modified</th>
+      <th scope="col"  class="govuk-table__header app-custom-class">Status</th>
+      <th scope="col" class="govuk-table__header app-custom-class">Filesize</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#">GLA Reg 06042020</a></td>
+      <td class="govuk-table__cell">Glasgow</td>
+      <td class="govuk-table__cell">08/04/2020</td>
+      <td class="govuk-table__cell">Completed</td>
+      <td class="govuk-table__cell">0.8MB</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#">GLA Reg 06042020</a></td>
+      <td class="govuk-table__cell">Glasgow</td>
+      <td class="govuk-table__cell">07/04/2020</td>
+      <td class="govuk-table__cell">Submitted</td>
+      <td class="govuk-table__cell">0.7MB</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#">GLA Reg 06042020</a></td>
+      <td class="govuk-table__cell">Glasgow</td>
+      <td class="govuk-table__cell">06/04/2020</td>
+      <td class="govuk-table__cell">Allocated</td>
+      <td class="govuk-table__cell">0.6MB</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#">GLA Reg 06042020</a></td>
+      <td class="govuk-table__cell">Glasgow</td>
+      <td class="govuk-table__cell">05/04/2020</td>
+      <td class="govuk-table__cell">Allocated</td>
+      <td class="govuk-table__cell">0.5MB</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#">GLA Reg 06042020</a></td>
+      <td class="govuk-table__cell">Glasgow</td>
+      <td class="govuk-table__cell">04/04/2020</td>
+      <td class="govuk-table__cell">Allocated</td>
+      <td class="govuk-table__cell">0.4MB</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#">GLA Reg 06042020</a></td>
+      <td class="govuk-table__cell">Glasgow</td>
+      <td class="govuk-table__cell">03/04/2020</td>
+      <td class="govuk-table__cell">Allocated</td>
+      <td class="govuk-table__cell">0.3MB</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#">GLA Reg 06042020</a></td>
+      <td class="govuk-table__cell">Glasgow</td>
+      <td class="govuk-table__cell">02/04/2020</td>
+      <td class="govuk-table__cell">Completed</td>
+      <td class="govuk-table__cell">0.2MB</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="#">GLA Reg 06042020</a></td>
+      <td class="govuk-table__cell">Glasgow</td>
+      <td class="govuk-table__cell">01/04/2020</td>
+      <td class="govuk-table__cell">Completed</td>
+      <td class="govuk-table__cell">0.1MB</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+
+</div>
+</div>
+</main>
+</div>
+
+
+
+{% endblock %}
