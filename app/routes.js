@@ -137,14 +137,30 @@ module.exports = router;
 
 
 
-// ROUTING FOR COVID-19 PROTOTYPE
+// ROUTING FOR COVID-19 PROTOTYPES
 
-// Branching keyworker status - need to update correct prototype version
-router.post('/V1/self-refer-a/2-current-status-answer', function (req, res) {
+// Branching keyworker status V1.4 - need to update correct prototype version
+  
+  // Get the answer from session data
+  // The name between the quotes is the same as the 'name' attribute on the input elements
+  // However in JavaScript we can't use hyphens in variable names
+  router.post('/V2/self-refer-a/2-current-status-answer', function (req, res) {
+  let keyworker = req.session.data['keyworker']
+
+  if (keyworker === 'true') {
+    res.redirect('./3-confirm-name')
+  } else {
+    res.redirect('./8-not-eligible')
+  }
+})
+
+
+// Branching keyworker status 1.3 - need to update correct prototype version
   // Get the answer from session data
   // The name between the quotes is the same as the 'name' attribute on the input elements
   // However in JavaScript we can't use hyphens in variable names
 
+router.post('/V1/self-refer-a/2-current-status-answer', function (req, res) {
   let keyworker = req.session.data['keyworker']
 
   if (keyworker === 'true') {
