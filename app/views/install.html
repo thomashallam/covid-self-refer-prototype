@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Gov.uk Prototype Kit: Covid-19 - Prototypes
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-m">Using this kit</h2> 
+      <p>Get a basic set up first</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Read the gov.uk installation guide - https://govuk-prototype-kit.herokuapp.com/docs</li>
+        <li>Read nhs.uk installation guide - https://nhsuk-prototype-kit.azurewebsites.net/docs/install</li>
+        <li>Install heroku cli: https://devcenter.heroku.com/articles/heroku-cli </li>
+        <li>Install github: https://git-scm.com/downloads</li>
+        <li>Test installing and running a new version of the gov.uk kit</li>
+        <li>Using git in Cli: https://nhsuk-prototype-kit.azurewebsites.net/docs/how-tos/git</li>
+        <li>Publishing to heroku</li>
+      </ul>
+      <h2 class="govuk-heading-m">Working on this kit</h2> 
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="https://github.com/thomashallam/covid-self-refer-prototype">Clone/Download/Fork a copy of this version</a></li>
+      </ul>
+      <h2 class="govuk-heading-m">Notes:</h2> 
+      <p>If you typically use the nhs.uk kit...</p>
+      <p>The gov.uk kit needs different instructions in Terminal. Type <code>npm start</code> to start the kit.</p>
+      <p>The format for setting an Heroku password is different for the nhs.uk kit to gov.uk kit</p>
+      <p>The nhsuk and govuk kits have different markup</p>
+      <p>Govuk Service Manual / Pattern library https://design-system.service.gov.uk/components/</p>
+      <p>NHSuk Service Manual / Pattern library https://service-manual.nhs.uk/design-system/components</p>
+      <p>NHSuk Service examples - https://github.com/nhsuk/nhs-prototypes-list</p>
+      <p>Other design systems across gov: https://design.homeoffice.gov.uk/</p>
+      <p>Support for the gov.uk kit and Service Manual is available here: Slack link</p>
+      <p>Support for the nhs.uk kit and Service Manual is available here: Gov.uk Slack link</p>
+      <p><a href="https://govuk-prototype-kit.herokuapp.com/docs/updating-the-kit">Updating the kit</p>
+
+      
+    </div>
+</div>
+
+{% endblock %}
+#
