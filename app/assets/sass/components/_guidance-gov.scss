@@ -1,0 +1,79 @@
+
+.gem-container {
+  width: 100%;
+  background-color: #1d70b8;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.gem-guide {
+  
+  margin-top: 10px;
+  margin-bottom: -30px;
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+
+.gem-date {
+  margin-top: -20px;
+  margin-bottom: -30px;
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+.gem-c-title__context{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1111111111;
+  margin: 0;
+
+}
+
+
+
+
+
+
+.gem-c-contents-list .gem-c-contents-list--no-underline {
+  font-decoration: none;
+}
+
+.gem-c-contents-list__title {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.gem-c-contents-list__title {
+  color: #0b0c0c;
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  text-decoration: none;
+
+}
+
+.gem-c-contents-list__list-item {
+  margin-left: -40px;  
+  margin-right: 20px;
+  padding-top: 10px;
+    line-height: 1.3;
+    list-style-type: none;
+    text-decoration: none;
+}
+.gem-c-contents-list__list-item li{
+    text-decoration: none;
+}
+.gem-c-contents-list--no-underline .gem-c-contents-list__link{
+  text-decoration: none;
+
+}
+

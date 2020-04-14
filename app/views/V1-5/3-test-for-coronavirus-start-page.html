@@ -1,0 +1,143 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Apply for a coronavirus test (Key Worker) - Start page
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      alpha
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+
+{# Are you a Keyworker? #}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Test for Coronavirus <br>
+      </h1>
+<!--       <p>The new coronavirus is called SARS-CoV-2. In some people it leads to the disease COVID-19.</p>
+      <h2 class="govuk-heading-m">
+        What is the test for?
+        </h2>
+      <p>If your test result is negative, it means: </p>
+
+      <ul class="govuk-list govuk-list--bullet" style="margin-top: -15px;">
+        <li>you don't currently have coronavirus</li>
+        <li>you can safely return to work, providing anyone you live with also tests negative</li>
+      </ul>
+      <p>If your test positive, or someone you live with tests positive, you cannot return to work. You'll need to continue to self-isolate. <a href="#">Read NHS advice about how long to self isolate.</a></p>
+--> 
+<!--       <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>To complete this form you will need:</p> 
+      <ul class="govuk-list govuk-list--bullet">
+        <li>registration number of vehicle you plan to attend the test</li></ul>-->
+<!--         <li>your National Insurance Number</li>
+ -->      
+ <h1 class="govuk-heading-m">
+  Key workers can now be tested
+  </h1>
+  <p>If you're a key worker who is self-isolating (not able to leave home), you can apply for you (or your household) to get tested for coronavirus.</p>
+
+    <p>Follow these next steps to check if you can have the coronavirus test. 
+    
+    <p>We will then ask for a few details about yourself, before you can go on to register for the test.</p>
+<!--       <a href="1-can-i-have-test" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Self-refer as a keyworker
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a> -->
+<!--       <a href="1-can-i-have-test" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a> -->
+      <form action="/V1-4/self-refer-a/1-can-i-have-test" method="post" novalidate style="display:inline; margin-right:10px;">
+        <input type="hidden" name="answers-checked" value="true">
+        <button class="govuk-button" data-module="govuk-button">
+          Self-refer for test
+        </button>
+      </form>        
+      
+      <form action="4-employer-refer" method="post" novalidate style="display:inline">
+        <input type="hidden" name="answers-checked" value="true">
+      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Employer, NHS Trust or Test Centre referral
+      </button>
+    </form>
+
+    <h2 class="govuk-heading-m">To complete this form, you'll need:</h2> 
+    <ul class="govuk-list govuk-list--bullet">
+        <li>your email address</li>
+        <li>your mobile phone number</li>
+        </li>
+    </ul>
+
+<!--     <h2 class="govuk-heading-m">If you're not a key worker </h2>
+ -->
+<!--       <p>If you're not a key worker you cannot apply for a test. If you have symptoms, use the <a href="#">111 online coronavirus service</a> to find out what to do.</p>
+      
+
+      <p>You can read <a href="#">the privacy notice about how we collect and process your data</a></p>
+ -->
+
+    </div>
+
+
+
+   <!--  <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+{% endblock %}
