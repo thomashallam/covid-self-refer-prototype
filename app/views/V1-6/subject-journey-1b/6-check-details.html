@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - Check your details
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+{# Check details? #}
+<div class="govuk-width-container">
+  <a href="5-mobile" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters-from-desktop">
+
+        <h1 class="govuk-heading-l">Check your answers</h1>
+
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name and sex
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Pete Smith
+              <br>
+              Male
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="5-full-name">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>        
+         
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+            Date of birth
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">16 March 2000</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="4-date-birth">
+                Change<span class="govuk-visually-hidden">dob</span>
+              </a>
+            </dd>
+          </div>
+
+
+          
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Email address
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">peter.smith.11@nhs.net</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="6-email">
+                Change<span class="govuk-visually-hidden"> email</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Phone number
+            </dt>
+            <dd class="govuk-summary-list__value">
+              073724422443
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="7-mobile">
+                Change<span class="govuk-visually-hidden"> mobile</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+      
+
+        <form action="7-household-members-added" method="post" novalidate>
+
+          <input type="hidden" name="answers-checked" value="true">
+
+          <button class="govuk-button" data-module="govuk-button" >
+            Save and continue
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

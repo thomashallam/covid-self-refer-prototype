@@ -1,0 +1,135 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - Confirm employer details
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+{# Are you a Keyworker? #}
+
+<div class="govuk-width-container">
+  <a href="4-mobile-number" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters-from-desktop">
+
+
+<form action="6-check-details" method="post" novalidate>
+
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <h1 class="govuk-fieldset__heading">
+      Who is your employer? 
+    </h1>
+  </legend>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Employer
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+  </div>
+
+<!--   <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Work email address
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text">
+  </div> -->
+
+<!--   <div class="govuk-form-group">
+    <label class="govuk-label" for="address-county">
+      National Insurance Number
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="address-county" name="address-county" type="numeric">
+  </div> -->
+
+
+  <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Why are we asking for this?
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          <p>We will use this information to help register you and to check your identity at the test site.</p>
+          <p>Also, this information will help us recognise your data if you complete other NHS forms or surveys.</a></p>
+        </div>
+      </details>
+
+        <input type="hidden" name="answers-checked" value="true">
+          <button  class="govuk-button" data-module="govuk-button">
+            Save and continue
+          </button>
+
+      </form>
+
+  </div>
+  
+</fieldset>
+
+<!-- 
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div> -->
+  </div>
+
+    </div>
+  </div>
+</main>
+</div>
+{% endblock %}

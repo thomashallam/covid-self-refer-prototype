@@ -8,7 +8,7 @@
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content">
     <strong class="govuk-tag govuk-phase-banner__content__tag">
-      alpha
+      beta
     </strong>
     <span class="govuk-phase-banner__text">
       This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
@@ -23,26 +23,28 @@
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
         As a self isolating keyworker register for a test
-        <span class="govuk-caption-xl">V1.5 - Requires content ahead testing</span>
-      </h1>
+        <span class="govuk-caption-xl">V1.6 (Currently in design - 14-16 Apr)</span>
+      </h1>{{releaseVersion | log }}
 
       <h2 class="govuk-heading-m">Start links</h2>
+      <p><a href="self-refer-a/0-keyworker-status">Self-refer new journey</a></p>
 
-      <p><a href="govuk/1-test-for-coronavirus-gov-uk">gov.uk/test-for-coronavirus: Test for Coronavirus</a></p>
+      <p><a href="subject-journey-1a/0-sms">Employer refers a keyworker for a test</a></p>
 
-      <p><a href="govuk/2-test-for-coronavirus-faqs">gov.uk/test-for-coronavirus-faqs: Test for Coronavirus - Frequently Asked Questions</a></p>
-
-      <p><a href="govuk/3-test-for-coronavirus-start-page">test-for-coronavirus.service.gov.uk: Test for Coronavirus-Start Page</a></p>
-      
-      <p><a href="govuk/4-employer-refer">other url.gov.uk:- Employer quick refer start</a></p>
-
+      <!--       <p><a href="subject-journey-1b/1-household-members">Key worker adds household member/s</a></p>
+ -->      
 
       <h2 class="govuk-heading-m">Design challenges</h2>
 
     <ol class="govuk-list govuk-list--number">
-      <li>How might we join the current journeys up with the gov.uk channel (awaiting content)</li>
-      <li>How might we make the Book a Drive through starting page easier to understand (awaiting content)</li>
-      <li>How might we ensure the call centre is not providing information about the most common questions about the testing process (awaiting content)</li>
+      <li>How Might We ensure users understand who is eligible to apply for a test</li>
+      <li>How Might We ensure users know whether or not they need to add household members</li>
+      <li>How Might We ensure there are sufficient clinical safety processes are in place</li>
+      <li>How Might We provide flexibility to key workers if their scheduling changes </li>
+      <li>How Might We ensure the eligble users only apply for tests by adding structured rules within the workflow</li>
+      <li>How Might We allow adding household members for only non-key workers with symptoms</li>
+      <li>How Might We ensure the whole service is easy to understand for all users</li>
+      <li>How Might We support same day testing - very high priority (i.e. no slot booking needed)</li>
     </ol>
     <details class="govuk-details" data-module="govuk-details">
       <summary class="govuk-details__summary">
@@ -51,10 +53,13 @@
         </span>
       </summary>
       <div class="govuk-details__text">
-        <p>FAQ page inserted for testing - still need to confirm what are the most common FAQs?</p>
-        <p>Updated service start page with two links to start journey</p>
-<!--         <p>Awaiting content - update with Carolines version</p>
--->     <p>Added gov.uk landing page to provide general overview of service for user- needs content</p>
+        <p>Split keyworker and household member with symptoms journey</p>
+        <p>split the registration process</p>
+        <p>Safeguarding information for those without transport</p>
+        <p>Additional questions to confirm who can drive</a></p>
+        <p>Additional questions to confirm how many people in hh have symptoms</a></p>
+        <p>Cancel a booked appointment / rebook</p>
+        <p>Updated Alpha to Beta banners</p>
       </div>
     </details>
     <h2 class="govuk-heading-m">Research findings (after testing)</h2>
@@ -65,7 +70,7 @@
         </span>
       </summary>
       <div class="govuk-details__text">
-        <p>Needs testing / iterating</p>
+        <p>Tested with XX users</p>
         <p><strong>Postive findings:</strong></p>
         <ul class="govuk-list govuk-list--bullet">
           <li>a</li>
@@ -80,9 +85,7 @@
         </ul>
       </div>
     </details>
-
-
-
+     
 
     </div>
 </div>

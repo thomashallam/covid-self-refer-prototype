@@ -137,7 +137,60 @@ module.exports = router;
 
 
 
-// ROUTING FOR COVID-19 PROTOTYPES
+// ROUTING FOR TEST FOR CORONOVIRUS PROTOTYPE
+
+
+// Branching keyworker status V1.6 - need to update correct prototype version
+  
+  // Get the answer from session data
+  // The name between the quotes is the same as the 'name' attribute on the input elements
+  // However in JavaScript we can't use hyphens in variable names
+  router.post('/V1-6/self-refer-a/2-household-status-answer', function (req, res) {
+    let keyworker = req.session.data['keyworker']
+  
+    if (keyworker === 'true') {
+      res.redirect('./3-confirm-name')
+    } else {
+      res.redirect('./3-confirm-name-keyworker')
+    }
+  })
+
+  router.post('/V1-6/self-refer-a/2-household-status-2-answer', function (req, res) {
+    let keyworker = req.session.data['keyworker']
+  
+    if (keyworker === 'true') {
+      res.redirect('./8-not-eligible')
+    } else {
+      res.redirect('./3-confirm-name-keyworker')
+    }
+  })
+
+
+  router.post('/V1-6/self-refer-a/0-keyworker-status-answer', function (req, res) {
+    let keyworker = req.session.data['keyworker']
+  
+    if (keyworker === 'true') {
+      res.redirect('./1-current-status')
+    } else {
+      res.redirect('./8-not-eligible')
+    }
+  })
+
+
+  router.post('/V1-6/self-refer-a/1-current-status-answer', function (req, res) {
+    let keyworker = req.session.data['keyworker']
+  
+    if (keyworker === 'true') {
+      res.redirect('./2-household-status')
+    } 
+    if (keyworker === 'household-true') {
+      res.redirect('./2-household-status-2')
+    }  else {
+      res.redirect('./8-not-eligible')
+    }
+  })
+
+
 
 // Branching keyworker status V1.4 - need to update correct prototype version
   
