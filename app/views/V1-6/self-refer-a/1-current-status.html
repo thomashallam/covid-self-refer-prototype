@@ -53,8 +53,17 @@ Apply for a coronavirus test - My current status
         </span>
       </summary>
       <div class="govuk-details__text">
-        <p>Summary of symptoms goes here.</p>
-        <p><a href="#">Link for more information</a>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>High temperature (I feel hot to touch on my chest or back)</li>
+          <li>New, continuous cough (I am coughing a lot for more than an hour, or have had 3 or more coughing episodes in 24 hours)</li>
+          <li>Sore throat</li>
+          <li>Short of breath</li>
+          <li>Muscle or joint pain</li>
+          <li>Lost my sense of smell or taste</li>
+          <li>Feeling tired or exhausted</li>
+          <li>Runny nose</li>
+        </ul>
+        <p><a href="#">Helpful link for more information</a>
       </div>
     </details>
 
@@ -65,28 +74,36 @@ Apply for a coronavirus test - My current status
       What is your current situation?
     </h2>
   </legend>
+  
+
   <div class="govuk-radios">
     <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="keyworker-symptoms" name="keyworker" type="radio" value="true">
-      <label class="govuk-label govuk-radios__label" for="keyworker-symptoms">
-        I have coronavirus symptoms right now
+      <input class="govuk-radios__input" id="keyworker-positive" name="keyworker" type="radio" value="immunitycheck">
+      <label class="govuk-label govuk-radios__label" for="keyworker-positive">
+    I have tested positive for coronavirus
       </label>
     </div>
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="keyworker-past" name="keyworker" type="radio" value="false">
       <label class="govuk-label govuk-radios__label" for="keyworker-past">
-        I previously had coronavirus symptoms
+    I previously had coronavirus symptoms
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="keyworker-symptoms" name="keyworker" type="radio" value="true">
+      <label class="govuk-label govuk-radios__label" for="keyworker-symptoms">
+    Right now I have coronavirus symptoms
       </label>
     </div>
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="keyworker-household" name="keyworker" type="radio" value="household-true">
       <label class="govuk-label govuk-radios__label" for="keyworker-household">
-        I live with someone who currently has coronavirus symptoms</label>
+    Someone I live with has coronavirus symptoms</label>
     </div>
     <div class="govuk-radios__item">
       <input class="govuk-radios__input" id="keyworker-contact" name="keyworker" type="radio" value="false">
       <label class="govuk-label govuk-radios__label" for="keyworker-contact">
-      I've recently came into contact with someone who tested positive for coronavirus
+    Someone I met recently tested positive for coronavirus
       </label>
     </div>
   </div>
@@ -98,38 +115,86 @@ Apply for a coronavirus test - My current status
 </form>
 
 
+<!-- NHS.uk status checker
+
+  What is your current situation?
+Select all that apply
+
+I have tested positive for coronavirus
+
+My GP or another healthcare professional has told me I have coronavirus based on my symptoms
+
+I’ve used the 111 coronavirus service (either online or by calling 111)
+
+I have coronavirus symptoms
+
+Someone I live with has coronavirus
+
+I am at high risk of complications from coronavirus, and am staying at home to reduce the chance of catching it
+
+I do not think I have any coronavirus symptoms. I am staying at home on government advice
+
+I do not think I have any coronavirus symptoms. I am one of the people who must travel to my place of work 
+
+----------
+
+Tell us about any recent changes. Select all that apply
+ 
+I have a high temperature (I feel hot to touch on my chest or back)
+
+I have a new, continuous cough (I am coughing a lot for more than an hour, or have had 3 or more coughing episodes in 24 hours)
+
+I have a sore throat
+
+I am short of breath
+
+I have muscle or joint pain
+
+I have lost my sense of smell or taste
+
+I feel tired or exhausted
+
+I have a runny nose
+
+None of these
+--------
+When did you start feeling like this?
+If you are not sure when you started feeling like this, select an approximate time
+ Today
+Yesterday
+2 to 4 days ago
+5 to 7 days ago
+Over a week ago
+-------
+
+Do you have any of these health problems?
+Select all that apply
+ 
+I have had an organ transplant
+
+I am having cancer treatment
+
+I have blood or bone marrow cancer, such as leukaemia
+
+I have a severe lung condition, such as cystic fibrosis, or my doctor has told me I have severe COPD or severe asthma
+
+I have a condition that makes me much more likely to get infections
+
+I am taking medicine that weakens my immune system
+
+I am pregnant and have a serious heart condition
+
+No - I do not have any of these health problems
+Why we are asking this question
+We will not use this information to identify you.
+
+We need this information to help us understand how coronavirus is affecting different age groups.
+
+We may also combine our data with data from other organisations. This information will help us recognise your data if you complete other NHS surveys.
+
+-->
 
 
-
-<!-- 
-    <div class="govuk-grid-column-one-third">
-
-      <aside class="app-related-items" role="complementary">
-        <h2 class="govuk-heading-m" id="subsection-title">
-          Related content
-        </h2>
-        <nav role="navigation" aria-labelledby="subsection-title">
-          <ul class="govuk-list govuk-!-font-size-16">
-            <li>
-              <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">
-                Coronavirus symptom checker 
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Related link
-              </a>
-            </li>
-            <li>
-              <a href="#" class="govuk-!-font-weight-bold">
-                More <span class="govuk-visually-hidden">in Subsection</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
-    </div>  -->
   </div>
 
 </div>

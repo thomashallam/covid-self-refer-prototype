@@ -166,15 +166,7 @@ module.exports = router;
   })
 
 
-  router.post('/V1-6/self-refer-a/0-keyworker-status-answer', function (req, res) {
-    let keyworker = req.session.data['keyworker']
   
-    if (keyworker === 'true') {
-      res.redirect('./1-current-status')
-    } else {
-      res.redirect('./8-not-eligible')
-    }
-  })
 
 
   router.post('/V1-6/self-refer-a/1-current-status-answer', function (req, res) {
@@ -185,12 +177,22 @@ module.exports = router;
     } 
     if (keyworker === 'household-true') {
       res.redirect('./2-household-status-2')
+    }if (keyworker === 'immunitycheck') {
+      res.redirect('../immunitycheck/0-immunity-check')
     }  else {
       res.redirect('./8-not-eligible')
     }
   })
 
-
+  router.post('/V1-6/self-refer-a/0-keyworker-status-answer', function (req, res) {
+    let keyworker = req.session.data['keyworker']
+  
+    if (keyworker === 'true') {
+      res.redirect('./1-current-status')
+    } else {
+      res.redirect('./8-not-eligible')
+    }
+  })
 
 // Branching keyworker status V1.4 - need to update correct prototype version
   
