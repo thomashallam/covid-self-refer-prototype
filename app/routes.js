@@ -173,10 +173,10 @@ module.exports = router;
     let keyworker = req.session.data['keyworker']
   
     if (keyworker === 'true') {
-      res.redirect('./2-household-status')
+      res.redirect('./3-confirm-name')
     } 
     if (keyworker === 'household-true') {
-      res.redirect('./2-household-status-2')
+      res.redirect('./3-confirm-name-keyworker')
     }if (keyworker === 'immunitycheck') {
       res.redirect('../immunitycheck/0-immunity-check')
     }  else {
