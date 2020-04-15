@@ -139,8 +139,24 @@ module.exports = router;
 
 // ROUTING FOR TEST FOR CORONOVIRUS PROTOTYPE
 
+// Branching Registration journey 
 
-// Branching keyworker status V1.6 - need to update correct prototype version
+  // Make some variables to store our numbers from the questions and give it the value from 'number1' and 'number2'
+  var number1 = req.session.data['number1']
+  var number2 = req.session.data['number2']
+  // Check whether the variables matches a condition
+  if (number1 + number2 == 10){
+    // Send user to next page if the two numbers is 10
+    res.redirect('/docs/examples/branching/answer-yes')
+  }
+  else {
+    // Otherwise send user to ineligible page
+    res.redirect('/docs/examples/branching/answer-no')
+  }
+
+
+
+// Branching keyworker self-refer status V1.6 - need to update correct prototype version
   
   // Get the answer from session data
   // The name between the quotes is the same as the 'name' attribute on the input elements
@@ -164,10 +180,6 @@ module.exports = router;
       res.redirect('./3-confirm-name-keyworker')
     }
   })
-
-
-  
-
 
   router.post('/V1-6/self-refer-a/1-current-status-answer', function (req, res) {
     let keyworker = req.session.data['keyworker']
