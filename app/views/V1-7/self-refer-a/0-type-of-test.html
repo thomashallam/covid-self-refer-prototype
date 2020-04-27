@@ -1,0 +1,165 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - My current status
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+{# Are you a Keyworker? #}
+
+<div class="govuk-width-container">
+  <a href=".." class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters-from-desktop">
+
+
+
+<form action="1-vehicle-reg" method="post" class="form">
+  <h1 class="govuk-heading-xl">
+    How do you want to take the coronavirus test?
+    </h1>
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          What type of vehicle can I attend in?
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <p>Staff need to reach into the car from ground level - each person being tested must be sat by a window. </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Cars - Yes</li>
+          <li>Small vans - Yes</li>
+          <li>Large vans / Motorhomes - No</li>
+          <li>Motorbikes - No</li>
+          <li>Public transport - No</li>
+          <li>Taxi - No</li>
+          <li>On foot - No</li>
+          </ul>
+      </div>
+    </details>
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+  </legend>
+  <div class="govuk-radios">
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="keyworker-yes" name="keyworker" type="radio" value="true">
+      <label class="govuk-label govuk-radios__label" for="keyworker-yes">
+        <strong>By requesting a home test kit</strong><br>
+        You can ask for a kit for yourself and anyone else you live with who has coronavirus symptoms. There is an identity check for home test kits.
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="keyworker-no" name="keyworker" type="radio" value="false">
+      <label class="govuk-label govuk-radios__label" for="keyworker-yes">
+        <strong>By visiting a regional test site in England</strong><br>
+        You or someone you live with must have a car to get to a local test centre
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="keyworker-unsure" name="keyworker" type="radio" value="false">
+      <label class="govuk-label govuk-radios__label" for="keyworker-yes">
+        <strong>By visiting a regional test site in Wales</strong><br>
+        You or someone you live with must have a car to get to a local test centre
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="keyworker-unsure" name="keyworker" type="radio" value="false">
+      <label class="govuk-label govuk-radios__label" for="keyworker-yes">
+        <strong>By visiting a regional test site in Scotland</strong><br>
+        You or someone you live with must have a car to get to a local test centre
+      </label>
+    </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="keyworker-unsure" name="keyworker" type="radio" value="false">
+      <label class="govuk-label govuk-radios__label" for="keyworker-yes">
+        <strong>By visiting a regional test site in Northern Ireland</strong><br>
+        You or someone you live with must have a car to get to a local test centre
+      </label>
+    </div>
+  </fieldset>
+</div>
+
+<!-- <p>
+  <div class="govuk-warning-text">
+    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    <strong class="govuk-warning-text__text">
+      <span class="govuk-warning-text__assistive">Important</span>
+      It can be a criminal offence to apply for a test by pretending you are a key worker.  
+    </strong>
+  </div>
+</p>
+ -->
+<button class="govuk-button" data-module="govuk-button">Save and continue</button>
+
+</form>
+
+
+
+
+
+<!-- 
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">
+                Coronavirus symptom checker 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>  -->
+  </div>
+
+</div>
+</div>
+</main>
+</div>
+{% endblock %}

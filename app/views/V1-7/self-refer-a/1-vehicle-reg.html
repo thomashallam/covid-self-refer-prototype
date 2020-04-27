@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Apply for a coronavirus test - Confirm my name
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="https://nhsdigital.eu.qualtrics.com/jfe/form/SV_8CYq8zRDZKHcA8l" target="_blank">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<!--   <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div> -->
+{% endblock %}
+
+{% block content %}
+{# Are you a Keyworker? #}
+
+<div class="govuk-width-container">
+  <a href="2-unique-code" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters-from-desktop">
+
+<form action="4-date-birth" method="post" novalidate>
+  
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <h1 class="govuk-fieldset__heading">
+      What's your vehicle registration number?
+    </h1>
+
+    <br>
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          What type of vehicle can I attend in?
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <p>Staff need to reach into the car from ground level - each person being tested must be sat by a window. </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Cars - Yes</li>
+          <li>Small vans - Yes</li>
+          <li>Large vans / Motorhomes - No</li>
+          <li>Motorbikes - No</li>
+          <li>Public transport - No</li>
+          <li>Taxi - No</li>
+          <li>On foot - No</li>
+          </ul>
+      </div>
+    </details>
+  </legend>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+    <strong>Registration number (number plate). For example, CU57ABC</strong>
+    <p>This must be the number plate of the vehicle you'll use to visit the test centre. We'll use this to check that it's you after you arrive. It doesn’t have to be registered to your name, just as long as it’s the one you turn up in.    </p>
+    </p>    </label> 
+    <input class="govuk-input govuk-!-width-one-half" id="address-town" name="address-town" type="text">
+  </div>
+</div>
+  
+
+
+
+
+</fieldset>
+
+
+  <input type="hidden" name="answers-checked" value="true">
+    <button class="govuk-button" data-module="govuk-button">
+      Save and continue
+    </button>
+</form>
+
+</div>
+
+</div>
+</div>
+</main>
+</div>
+
+
+
+{% endblock %}
